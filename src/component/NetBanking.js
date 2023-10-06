@@ -4,21 +4,26 @@ import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 
 const currencies = [
+  
   {
-    value: 'USD',
-    label: '$',
+    value: 'SBI',
+    label: 'State Bank Of India',
   },
   {
-    value: 'EUR',
-    label: '€',
+    value: 'IC',
+    label: 'ICICI Bank',
   },
   {
     value: 'BTC',
-    label: '฿',
+    label: 'HDFC Bank',
   },
   {
     value: 'JPY',
-    label: '¥',
+    label: 'AXIS Bank',
+  },
+  {
+    value: 'KTC',
+    label: 'Kotak Bank',
   },
 ];
 
@@ -29,7 +34,7 @@ export const NetBanking = () => {
        className='py-4'
         component="form"
         sx={{
-          '& .MuiTextField-root': { m: 1, width: '30ch' },
+          '& .MuiTextField-root': { m: 1, width: '25ch' },
         }}
         noValidate
         autoComplete="off"
@@ -39,8 +44,8 @@ export const NetBanking = () => {
             id="outlined-select-currency"
             select
             label="Select"
-            defaultValue="EUR"
-            helperText="Please select your currency"
+            defaultValue="SBI"
+            helperText="Please select your Bank"
           >
             {currencies.map((option) => (
               <MenuItem key={option.value} value={option.value}>
