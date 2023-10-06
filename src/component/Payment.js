@@ -8,7 +8,7 @@ export const Payment = () => {
 
   return (
     <>
-      <div className="wrapper m-5 v-screen d-flex flex-column align-items-center justify-content-center border text-center" style={{ maxWidth: "300px", backgroundColor: "#58228C", borderRadius: "14px" }}>
+      <div className="wrapper m-5  d-flex flex-column m-auto mt-5 align-items-center justify-content-center border text-center" style={{ maxWidth: "300px", backgroundColor: "#58228C", borderRadius: "14px" }}>
         <div className="w-100 d-flex align-items-center justify-content-between text-white px-3 pt-2 pb-4" style={{ paddingTop: "0px" }}>
           <HiOutlineArrowNarrowLeft style={{ fontSize: "20px" }} />
           <p className="m-0" style={{ fontSize: "20px" }}>Payment</p>

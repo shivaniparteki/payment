@@ -3,7 +3,9 @@ import { Payment } from "./component/Payment";
 
 function App() {
   return (
-    <Payment />
+    <div className="w-100">
+      <Payment />
+    </div>
 
   );
 }
