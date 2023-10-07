@@ -11,14 +11,14 @@ export const Upi = ({ selected }) => {
       {
         selected === "UPI" && (
           <>
-            <p className="m-0 pt-4 pb-2 ps-4 fw-bold text-start">{selected}</p>
+            {/* <p className="m-0 pt-4 pb-2 ps-4 fw-bold text-start">{selected}</p> */}
             <div >
               <div className="m-0 px-3 py-2 gap-2" style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)" }}>
                 {
                   paymentIcons?.map((icon, index) => {
                     return (
                       <div className="text-center" style={{ width: "2.5rem" }}>
-                        <img className="w-100 " src={icon.img} alt="" />
+                        <img key={index} className="w-100 " src={icon.img} alt="" />
                       </div>
                     )
                   })
@@ -36,7 +36,7 @@ export const Upi = ({ selected }) => {
         )
       }
 
-      {
+      {/* {
         selected === "Debit Card" && (<DebitCard />)
       }
 
@@ -46,7 +46,7 @@ export const Upi = ({ selected }) => {
 
       {
         selected === "Net Banking" && (<NetBanking />)
-      }
+      } */}
 
     </>
   );

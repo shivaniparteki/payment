@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { menuItems } from "../utils/Constant";
 import { Upi } from "./Upi";
+import { DebitCard } from "./DebitCard";
+import { CreditCard } from "./CreditCard";
+import { NetBanking } from "./NetBanking";
 
 export const PayMethods = () => {
   const [isShown, setIsShown] = useState(false)
@@ -22,22 +25,38 @@ export const PayMethods = () => {
         <ul className="list-unstyled list-group list-group-flush">
           {
             menuItems?.map((element, index) => {
-              return (
+              const isSelected = selected === element?.item;
 
-                <li key={index} onClick={() => handleClick(element?.item)} className="ps-4 py-2 pb-4 list-group-item fw-bold text-start" style={{ marginTop: "-12px", borderRadius: "10px 10px 10px 10px", minWidth: "250px", boxShadow: "0px -3px 15px -5px rgb(125 125 125)" }}>
-                  <span style={{ cursor: "pointer" }}>
-                    {element?.item}
-                  </span>
-                </li>
+              return (
+                <div key={index}>
+                  <li
+                    onClick={() => handleClick(element?.item)}
+                    className="ps-4 py-2 pb-4 list-group-item fw-bold text-start"
+                    style={{
+                      marginTop: "-12px",
+                      borderRadius: "10px 10px 10px 10px",
+                      minWidth: "250px",
+                      boxShadow: "0px -3px 15px -5px rgb(125 125 125)",
+                    }}
+                  >
+                    <span style={{ cursor: "pointer" }}>
+                      {element?.item}
+                    </span>
+                  </li>
+
+                  {isSelected && isShown && (
+                    <>
+                      {selected === "UPI" && <Upi selected={selected} />}
+                      {selected === "Debit Card" && <DebitCard selected={selected} />}
+                      {selected === "Credit Card" && <CreditCard selected={selected} />}
+                      {selected === "Net Banking" && <NetBanking selected={selected} />}
+                    </>
+                  )}
+                </div>
               );
             })
           }
 
-          {
-
-            isShown ? <Upi selected={selected} /> : ""
-
-          }
 
         </ul>
       </div>

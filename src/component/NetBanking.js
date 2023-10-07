@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 
-const currencies = [
+const bankName = [
   
   {
     value: 'SBI',
@@ -47,7 +47,7 @@ export const NetBanking = () => {
             defaultValue="SBI"
             helperText="Please select your Bank"
           >
-            {currencies.map((option) => (
+            {bankName.map((option) => (
               <MenuItem key={option.value} value={option.value}>
                 {option.label}
               </MenuItem>

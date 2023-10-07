@@ -59,29 +59,29 @@ export const paymentIcons = [
   }
 
  ];
- export const bankName = [
-  {
-    value: 'Select Bank',
+//  export const bankName = [
+//   {
+//     value: 'Select Bank',
     
-  },
-  {
-    value: 'State Bank Of India',
+//   },
+//   {
+//     value: 'State Bank Of India',
     
-  },
-  {
-    value: 'ICICI Bank',
+//   },
+//   {
+//     value: 'ICICI Bank',
    
-  },
-  {
-    value: 'HDFC Bank',
+//   },
+//   {
+//     value: 'HDFC Bank',
     
-  },
-  {
-    value: 'Kotak',
+//   },
+//   {
+//     value: 'Kotak',
     
-  },
-  {
-    value: 'AXIS Bank',
+//   },
+//   {
+//     value: 'AXIS Bank',
     
-  }
-];
+//   }
+// ];
