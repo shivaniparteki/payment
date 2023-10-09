@@ -1,4 +1,11 @@
 import googlePay from "../assets/google-pay.png";
+import amazonPay from "../assets/amazon-pay.png";
+import applePay from "../assets/apple-pay.png";
+import messenger from "../assets/messenger.png";
+import paypal from "../assets/paypal.png";
+import paytm from "../assets/paytm.png";
+import pinterest from "../assets/pinterest.png";
+import whatsapp from "../assets/whatsapp.png";
 import visa from "..//assets/visa.png";
 import card from "../assets/card.png";
 
@@ -23,25 +30,25 @@ export const paymentIcons = [
     img: googlePay,
   },
   {
-    img: googlePay,
+    img: whatsapp,
   },
   {
-    img: googlePay,
+    img: applePay,
   },
   {
-    img: googlePay,
+    img: messenger,
   },
   {
-    img: googlePay,
+    img: paypal,
   },
   {
-    img: googlePay,
+    img:  paytm,
   },
   {
-    img: googlePay,
+    img: pinterest,
   },
   {
-    img: googlePay,
+    img: amazonPay,
   },
   {
     img: googlePay,

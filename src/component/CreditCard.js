@@ -21,8 +21,8 @@ export const CreditCard = () => {
                 {
                   cardImg?.map((icon, index) => {
                     return (
-                      <div className="text-center" style={{ width: "2rem" }}>
-                        <img className="w-100 " src={icon.card} alt="" />
+                      <div key={index} className="text-center" style={{ width: "2rem" }}>
+                        <img  className="w-100 " src={icon.card} alt="" />
                       </div>
                     )
                   })
